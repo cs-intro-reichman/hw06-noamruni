@@ -52,7 +52,6 @@ public class Runigram {
                 int R = in.readInt();
                 int G = in.readInt();
                 int B = in.readInt();
-                System.out.printf("%d %d %d \n", R,G,B);
                 image[row][col] = new Color(R, G, B);
             }
 		}
@@ -79,7 +78,7 @@ public class Runigram {
         for (int i = 0; i < numRows; i++){
             for (int j = 0; j < numCols; j++){
                 Color pixel = image[i][j];
-                System.out.printf("(%3d, %3d, %3d) ", pixel.getRed(), pixel.getGreen(), pixel.getBlue());
+                print(pixel);
             }
             System.out.println();
         }
